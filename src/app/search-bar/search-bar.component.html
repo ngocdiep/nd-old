@@ -1,0 +1,4 @@
+<i class="fa fa-search" (click)="focusToSearchInput()">
+</i>
+<input #searchInput placeholder="Search" fxFlex.xs="180px" fxFlex="400px" (focus)="onFocusSearchInput()" (blur)="onBlurSearchInput()"/>
+<i class="fa fa-times" #clear aria-hidden="true" (click)="clearSearchInput()"></i>

@@ -1,0 +1,19 @@
+.toolbar {
+    background-color: rgb(96, 133, 104);
+    overflow: hidden;
+    height: 43px;
+    margin: 0 auto;
+    nav {
+        padding-top: 11px;
+        a {
+            text-decoration: none;
+            padding: 0 14px;
+        }
+        a:last-child {
+            float: right;
+        }
+    }
+}
+:host ::ng-deep input {
+    width: 100px;
+}
