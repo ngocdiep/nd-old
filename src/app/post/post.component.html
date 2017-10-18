@@ -1,6 +1,9 @@
 <p>
-  post works!  
+  post works!
 </p>
-<div *ngFor="let p of allProducts">
-  {{p.name}}
+<div *ngFor="let p of allPosts">
+  <section>
+    <h1>{{p.title}}</h1>
+    <p>p.description</p>
+  </section>
 </div>

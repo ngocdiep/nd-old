@@ -3,19 +3,18 @@ import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
 
 // We use the gql tag to parse our query string into a query document
-const allProducts = gql`
-query allProducts {
-  allProducts {
-    id
-    name
-    price
-    image
+const allPosts = gql`
+query allPosts {
+  allPosts {
+    id,
+    title,
+    description
   }
 }
 `;
 
 interface QueryResponse {
-  allProducts;
+  allPosts;
   loading;
 }
 
@@ -28,16 +27,16 @@ interface QueryResponse {
 export class PostComponent implements OnInit {
 
   loading: boolean;
-  allProducts: any;
+  allPosts: any;
 
   constructor(private apollo: Apollo) { }
 
   ngOnInit() {
     this.apollo.watchQuery<QueryResponse>({
-      query: allProducts
+      query: allPosts
     }).subscribe(({ data }) => {
       this.loading = data.loading;
-      this.allProducts = data.allProducts;
+      this.allPosts = data.allPosts;
     });
   }
 
