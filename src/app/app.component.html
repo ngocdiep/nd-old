@@ -1,8 +1,15 @@
-<div class="toolbar">
-  <nav>
-    <a class="fa fa-home" routerLink="/" aria-hidden="true"> Home</a>
-    <app-search-bar [_width]="100"></app-search-bar>
-    <a class="fa fa-info-circle" routerLink="/about"> About</a>
-  </nav>
+<div fxFlexFill fxLayout="column">
+  <header>
+    <div class="toolbar">
+      <nav fxLayout="row">
+        <a class="fa fa-home" routerLink="/" aria-hidden="true"> Home</a>
+        <app-search-bar></app-search-bar>
+        <div class="right">
+          <a class="fa fa-info-circle" routerLink="/about"> About</a>
+      </div>
+      </nav>
+    </div>
+  </header>
+  <router-outlet></router-outlet>
+  <footer>Made by nd :)</footer>
 </div>
-<router-outlet></router-outlet>

@@ -19,7 +19,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   onFocusSearchInput() {
-    this.clearEl.nativeElement.style.display = 'inline';
+    this.clearEl.nativeElement.style.display = 'flex';
   }
 
   onBlurSearchInput() {

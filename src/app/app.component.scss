@@ -1,19 +1,38 @@
+footer {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
 .toolbar {
-    background-color: rgb(96, 133, 104);
-    overflow: hidden;
-    height: 43px;
-    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    vertical-align: middle;
     nav {
-        padding-top: 11px;
+        align-items: center;
         a {
             text-decoration: none;
             padding: 0 14px;
         }
-        a:last-child {
-            float: right;
+        .right {
+            margin-left: auto;
         }
     }
 }
+
+:host {
+    top: 0px;
+}
+
 :host ::ng-deep input {
-    width: 100px;
+    width: 300px;
+    height: 40px;
 }
