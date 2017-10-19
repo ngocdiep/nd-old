@@ -28,9 +28,10 @@ export class SearchBarComponent implements OnInit {
     }
   }
 
-  focusToSearchInput() {
-    this.inputEl.nativeElement.focus();
-    this.onFocusSearchInput();
+  search() {
+    if (this.inputEl.nativeElement.value) {
+      alert(this.inputEl.nativeElement.value);
+    }
   }
 
   clearSearchInput() {

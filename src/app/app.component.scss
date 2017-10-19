@@ -1,3 +1,17 @@
+header {
+    position: fixed;
+    top: 0;    
+    z-index: 2;
+    overflow: auto;
+    width: 100%;
+}
+
+#globalContainer {
+    position: relative;
+    margin-top: 80px;
+    text-align: center;
+}
+
 footer {
     position: fixed;
     right: 0;
@@ -6,26 +20,6 @@ footer {
     padding: 1rem;
     background-color: #efefef;
     text-align: center;
-}
-
-.toolbar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    vertical-align: middle;
-    nav {
-        align-items: center;
-        a {
-            text-decoration: none;
-            padding: 0 14px;
-        }
-        .right {
-            margin-left: auto;
-        }
-    }
 }
 
 :host {

@@ -1,6 +1,6 @@
 <div class="nd-search" fxLayout="row">
-  <i class="fa fa-search" (click)="focusToSearchInput()">
-  </i>
-  <input #searchInput placeholder="Search" (focus)="onFocusSearchInput()" (blur)="onBlurSearchInput()" width="300px" />
+  <input #searchInput placeholder="Search" (focus)="onFocusSearchInput()" (blur)="onBlurSearchInput()" fxFlex.xs="180px" fxFlex="300px" />
   <i class="fa fa-times" #clear (click)="clearSearchInput()"></i>
+  <i class="fa fa-search" (click)="search()">
+  </i>
 </div>

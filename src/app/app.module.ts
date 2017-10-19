@@ -9,13 +9,15 @@ import { PostComponent } from './post/post.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ApolloModule } from 'apollo-angular';
 import { provideClient } from './client';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostComponent,
     AboutComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

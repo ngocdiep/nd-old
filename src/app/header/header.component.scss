@@ -1,0 +1,15 @@
+.toolbar {
+    background-color: #efefef;
+    min-width: 360px;
+    nav {        
+        align-items: center;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            padding: 0 0.5rem;
+        }
+        .right {
+            margin-left: auto;
+        }
+    }
+}
